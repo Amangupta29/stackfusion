@@ -1,0 +1,100 @@
+/** @format */
+
+body {
+	background: #bdc3c7;
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+	background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+.header-1 {
+	font-style: italic;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: xx-large;
+}
+.row col-12 d-flex justify-content-center text-white {
+	font-size: large;
+	font-weight: 500;
+}
+
+.form {
+	background-color: white;
+	border-radius: 5px;
+	width: 550px;
+	height: 500px;
+	margin: 20px auto;
+	padding: 20px;
+	animation: slide-in 1000ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+}
+
+.form-body {
+	text-align: left;
+	padding: 20px 10px;
+	animation: drop-in 1000ms;
+	border-radius: 10px;
+}
+
+.form-body > * {
+	padding: 5px;
+}
+
+.form__label {
+	width: 40%;
+
+	height: 50px;
+	font-size: medium;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.form__input {
+	height: 30px;
+	background-color: #bdc3c7;
+
+	border-radius: 10px;
+}
+
+.footer {
+	text-align: center;
+}
+.button {
+	background-color: #bdc3c7;
+	color: black;
+
+	height: 40px;
+	width: 90px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+.forget {
+	display: flex;
+}
+.forget:hover {
+	color: red;
+}
+@keyframes drop-in {
+	from {
+		transform: rotate(-30deg) translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: rotate(0deg) translateX(0%);
+		opacity: 1;
+	}
+}
+@keyframes slide-in {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0%);
+	}
+}
